@@ -1,0 +1,23 @@
+.aboutBox
+{
+    display: flex;
+    margin: 50px 0;
+}
+.aboutImg
+{
+    height: 250px;
+    width: 250px;
+    background-color: #24272C;
+    box-shadow: 
+      5px 5px 10px rgba(0, 0, 0, 0.3), 
+      -5px -5px 10px rgba(255, 255, 255, 0.1);
+}
+.aboutImg img
+{
+    height: 100%;
+}
+.aboutDetails
+{
+    margin-left: 50px;
+    color: #ffffff;
+}

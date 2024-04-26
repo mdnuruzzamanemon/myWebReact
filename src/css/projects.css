@@ -1,0 +1,113 @@
+.progress-bar 
+{
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 5px;
+    position: relative;
+    overflow: hidden;
+}
+  
+  .progress-bar-fill 
+  {
+    background-color: #4CAF50;
+    height: 100%;
+    width: 0;
+    transition: width 1s ease-in-out;
+  }
+  .projectsMainBox
+  {
+    color: #ffffff;
+  }
+
+  .projectBtns
+  {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+  }
+  .projectBtns button
+  {
+    background-color: #24272C;
+    color: #ffffff;
+    padding: 10px 30px;
+    border-radius: 7px;
+    font-size: 18px;
+    border: none;
+    box-shadow: 
+      5px 5px 10px rgba(0, 0, 0, 0.3), 
+      -5px -5px 10px rgba(255, 255, 255, 0.1);
+      margin: 0 30px;
+  }
+  .projectBox
+  {
+    display: flex;
+    justify-content: space-around;
+  }
+  .allProjects
+  {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+  .viewProjects
+  {
+    width: 60%;
+  }
+  .project
+  {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    box-shadow: 
+      5px 5px 10px rgba(0, 0, 0, 0.3), 
+      -5px -5px 10px rgba(255, 255, 255, 0.1);
+    
+  }
+  .project img
+  {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+  .viewProject
+  {
+    height: 400px;
+    width: 400px;
+    box-shadow: 
+      5px 5px 10px rgba(0, 0, 0, 0.3), 
+      -5px -5px 10px rgba(255, 255, 255, 0.1);
+      padding: 25px;
+      border-radius: 5px;
+  }
+  .imageBox
+  {
+    box-shadow: 
+      inset 5px 5px 10px rgba(0, 0, 0, 0.3), 
+      inset -5px -5px 10px rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+  }
+  .imageBox img
+  {
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+  }
+  .contentBox
+  {
+    text-align: center;
+    padding: 10px;
+  }
+  .contentBox h3
+  {
+    font-size: 22px;
+  }
+  .contentBox p
+  {
+    font-size: 14px;
+  }
+  .contentBox span
+  {
+    font-size: 30px;
+  }
