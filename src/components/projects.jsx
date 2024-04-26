@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "../css/projects.css";
 import projectImg from "../images/emon.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -22,6 +23,31 @@ function Projects() {
         },100);
     },[]);
 
+    const [selectedProject, setSelectedProject]= useState(
+        {
+            title: "This is project 1",
+            details: "This is details for project 1",
+            image: projectImg,
+            icon: faGithub,
+            link: "https://www.facebook.com/"
+        }
+    );
+
+    const handleProjectClick =(title, details,image, icon, link)=>
+    {
+        setSelectedProject(
+            {
+                title: title,
+                details: details,
+                image: image,
+                icon: icon,
+                link: link
+            }
+        );
+    };
+
+    
+
 
     return (
         <div className="projectsMainBox">
@@ -37,27 +63,29 @@ function Projects() {
                 </div>
                 <div className="projectBox">
                     <div className="allProjects">
-                        <div className="project project1">
+                        <div className="project project1" onClick={()=>handleProjectClick("This is project title1", "this is the project description for project 1. so we should check it",projectImg,faGithub, "https://www.facebook.com/")}>
                             <img src={projectImg} alt="project" />
                         </div>
-                        <div className="project project2">
+                        <div className="project project2" onClick={()=>handleProjectClick("This is project title2", "this is the project description for project 2. so we should check it",projectImg,faGithub, "https://www.youtube.com/")}>
                             <img src={projectImg} alt="project" />
                         </div>
-                        <div className="project project3">
+                        <div className="project project3" onClick={()=>handleProjectClick("This is project title3", "this is the project description for project 3. so we should check it",projectImg,faGithub, "https://www.x.com/")}>
                             <img src={projectImg} alt="project" /> 
                         </div>
                     </div>
                     <div className="viewProjectsBox">
+                    <Link to={selectedProject.link}>
                         <div className="viewProject">
                             <div className="imageBox">
-                                <img src={projectImg} alt="project" /> 
+                                <img src={selectedProject.image} alt="project" /> 
                             </div>
                             <div className="contentBox">
-                                <h3>This is Project title</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic autem, similique.</p>
-                                <span><FontAwesomeIcon icon={faGithub} /></span>
+                                <h3>{selectedProject.title}</h3>
+                                <p>{selectedProject.details}</p>
+                                <span><FontAwesomeIcon icon={selectedProject.icon} /></span>
                             </div>
                         </div>
+                        </Link>
                     </div>
                 </div>
             </div>
