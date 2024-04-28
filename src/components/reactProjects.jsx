@@ -13,7 +13,7 @@ function ProgressBar({ progress }) {
     );
 }
 
-function Projects() {
+function ReactProjects({ handleTabClick }) {
 
     const [progress, setProgress] = useState(0);
 
@@ -57,9 +57,9 @@ function Projects() {
                     <ProgressBar progress={progress}/>
                 </div>
                 <div className="projectBtns">
-                    <button> React Projects </button>
-                    <button> Web Projects </button>
-                    <button> Android Projects </button>
+                    <button style={{backgroundColor: "#4CAF50"}} onClick={() => handleTabClick("react")}> React Projects </button>
+                    <button onClick={() => handleTabClick("web")}> Web Projects </button>
+                    <button onClick={() => handleTabClick("android")}> Android Projects </button>
                 </div>
                 <div className="projectBox">
                     <div className="allProjects">
@@ -93,4 +93,4 @@ function Projects() {
     );
 }
 
-export default Projects;
+export default ReactProjects;
