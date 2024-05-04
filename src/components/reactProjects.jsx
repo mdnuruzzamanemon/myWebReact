@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../css/projects.css";
-import projectImg from "../images/emon.png";
+import reactImg1 from "../images/reactImg1.svg";
+import reactImg2 from "../images/reactImg2.svg";
+import reactImg3 from "../images/reactImg3.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 function ProgressBar({ progress }) {
     return (
@@ -25,11 +28,11 @@ function ReactProjects({ handleTabClick }) {
 
     const [selectedProject, setSelectedProject]= useState(
         {
-            title: "This is project 1",
-            details: "This is details for project 1",
-            image: projectImg,
-            icon: faGithub,
-            link: "https://www.facebook.com/"
+            title: "My portfolio Website",
+            details: "This project is developed with react.js and now it is live on internet.",
+            image: reactImg1,
+            icon: faGlobe,
+            link: "https://www.emon.com/"
         }
     );
 
@@ -63,14 +66,14 @@ function ReactProjects({ handleTabClick }) {
                 </div>
                 <div className="projectBox">
                     <div className="allProjects">
-                        <div className="project project1" onClick={()=>handleProjectClick("This is project title1", "this is the project description for project 1. so we should check it",projectImg,faGithub, "https://www.facebook.com/")}>
-                            <img src={projectImg} alt="project" />
+                        <div className="project project1" onClick={()=>handleProjectClick("My portfolio Website", "This project is developed with react.js and now it is live on internet.",reactImg1,faGlobe, "https://www.emon.com/")}>
+                            <img src={reactImg1} alt="project" />
                         </div>
-                        <div className="project project2" onClick={()=>handleProjectClick("This is project title2", "this is the project description for project 2. so we should check it",projectImg,faGithub, "https://www.youtube.com/")}>
-                            <img src={projectImg} alt="project" />
+                        <div className="project project2" onClick={()=>handleProjectClick("PiRhoTech website with react", "PiRhoTech is a IT based company. So this is a private project. This project will be live soon.",reactImg2,faGithub, "https://www.github.com/")}>
+                            <img src={reactImg2} alt="project" />
                         </div>
-                        <div className="project project3" onClick={()=>handleProjectClick("This is project title3", "this is the project description for project 3. so we should check it",projectImg,faGithub, "https://www.x.com/")}>
-                            <img src={projectImg} alt="project" /> 
+                        <div className="project project3" onClick={()=>handleProjectClick("Kormi Koi Website with react", "Kormi Koi is a plattform where user can find daily workers. This project will live soon",reactImg3,faGithub, "https://www.kormikoi.com/")}>
+                            <img src={reactImg3} alt="project" /> 
                         </div>
                     </div>
                     <div className="viewProjectsBox">
