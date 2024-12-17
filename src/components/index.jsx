@@ -6,6 +6,8 @@ import About from "./about";
 import ReactProjects from "./reactProjects";
 import WebProject from "./webProject";
 import AndroidProject from "./androidProjects";
+import Skills from "./skills";
+import Certifications from "./certifications";
 
 function Index()
 {
@@ -25,7 +27,8 @@ function Index()
                 {activeTab === "react" && <ReactProjects handleTabClick={handleTabClick} />}
                 {activeTab === "web" && <WebProject handleTabClick={handleTabClick}/>}
                 {activeTab === "android" && <AndroidProject handleTabClick={handleTabClick}/>}
-                
+                <Skills />
+                <Certifications />
             </div>
         </div>
     );

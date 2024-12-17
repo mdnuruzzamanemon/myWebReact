@@ -27,8 +27,8 @@
     flex-direction: column;
     background-color: #24272C;
     color: #ffffff;
-    height: 70px;
-    width: 70px;
+    height: 80px;
+    width: 80px;
     padding: 5px;
     font-size: 14px;
     border-radius: 5px;
@@ -43,4 +43,56 @@
 nav
 {
     padding: 30px 0;
+}
+.navbarToggler
+{
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+}
+.mblMenuCross
+{
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+}
+@media screen and (max-width: 850px)
+{
+    .mainMenu
+    {
+        background-color: #232732;
+        width: 60%;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: -100%;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.1);
+        transition: right 0.3s ease;
+        z-index: 10;
+        overflow-y: scroll;
+    }
+    .mainMenu ul
+    {
+        flex-direction: column;
+        margin-top: 60px;
+        margin-left: 40px;
+        
+        padding: 20px;
+    }
+    .navbarToggler
+    {
+        display: block;
+    }
+    nav
+    {
+        padding: 20px 0;
+    }
+    .mblMenuCross
+    {
+        display: block;
+    }
 }

@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../css/projects.css";
-import projectImg from "../images/emon.png";
+// import projectImg from "../images/emon.png";
+import valluk from "../images/valluk.png"
+import bdinclusive from "../images/bdinclusive.png"
+import dreamssel from "../images/dreamssel.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+// import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+
 
 function ProgressBar({ progress }) {
     return (
@@ -25,11 +30,11 @@ function WebProject({ handleTabClick }) {
 
     const [selectedProject, setSelectedProject] = useState(
         {
-            title: "This is Web project",
-            details: "This is details for project 1",
-            image: projectImg,
-            icon: faGithub,
-            link: "https://www.facebook.com/"
+            title: "E-Commerce website of Valluk",
+            details: "Valluk is a platform where user can buy there daily needs.",
+            image: valluk,
+            icon: faGlobe,
+            link: "https://www.valluk.com/"
         }
     );
 
@@ -62,14 +67,14 @@ function WebProject({ handleTabClick }) {
                 </div>
                 <div className="projectBox">
                     <div className="allProjects">
-                        <div className="project project1" onClick={() => handleProjectClick("This is project title1", "this is the project description for project 1. so we should check it", projectImg, faGithub, "https://www.facebook.com/")}>
-                            <img src={projectImg} alt="project" />
+                        <div className="project project1" onClick={() => handleProjectClick("E-Commerce website of Valluk", "Valluk is a platform where user can buy there daily needs.", valluk, faGlobe, "https://www.valluk.com/")}>
+                            <img src={valluk} alt="project" />
                         </div>
-                        <div className="project project2" onClick={() => handleProjectClick("This is project title2", "this is the project description for project 2. so we should check it", projectImg, faGithub, "https://www.youtube.com/")}>
-                            <img src={projectImg} alt="project" />
+                        <div className="project project2" onClick={() => handleProjectClick("E-commerce website BdInclusive", "You can buy your products from this site", bdinclusive, faGlobe, "https://www.bdinclusive.com/")}>
+                            <img src={bdinclusive} alt="project" />
                         </div>
-                        <div className="project project3" onClick={() => handleProjectClick("This is project title3", "this is the project description for project 3. so we should check it", projectImg, faGithub, "https://www.x.com/")}>
-                            <img src={projectImg} alt="project" />
+                        <div className="project project3" onClick={() => handleProjectClick("Dreamssel for your fasion dream", "Marketplace where user can buy product as well as distributor can aslo buy product as reseller", dreamssel, faGlobe, "https://www.dreamssel.com/")}>
+                            <img src={dreamssel} alt="project" />
                         </div>
                     </div>
                     <div className="viewProjectsBox">
