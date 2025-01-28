@@ -1,14 +1,13 @@
 // Certifications.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 
 import "../css/certifications.css"
 
-import gitLogo from "../images/skillsLogo/git.png";
-import cpp from "../images/skillsLogo/cpp.png";
-import cssLogo from "../images/skillsLogo/css.png";
-import java from "../images/skillsLogo/java.png";
-import javascript from "../images/skillsLogo/javascript.png";
+import ethicalHacking from "../images/certificates/ethicalHacking.png";
+import nasa from "../images/certificates/nasa.jpg";
+import volunteer from "../images/certificates/Volunteer-221002143-1.png";
+
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -22,29 +21,44 @@ import 'swiper/css/effect-cards';
 // import required modules
 import { EffectCards } from 'swiper/modules';
 
+
+function ProgressBar({ progress }) {
+  return (
+    <div className="progress-bar">
+      <div className="progress-bar-fill" style={{ width: `${progress}%` }}></div>
+    </div>
+  );
+}
+
 function Certifications() {
-    
-  
-    return (
-      <div className="certification-carousel">
+  const [progress, setProgress] = useState(0);
+  useEffect(() => {
+    setTimeout(() => {
+      setProgress(50);
+    }, 100);
+  }, []);
+
+  return (
+    <div className="certification-carousel">
+      <div className="container">
+        <h3>Certifications</h3>
+        <div className="progressBox mb-5">
+          <ProgressBar progress={progress} />
+        </div>
         <Swiper
-        effect={'cards'}
-        grabCursor={true}
-        modules={[EffectCards]}
-        className="mySwiper"
-      >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-      </Swiper>
+          effect={'cards'}
+          grabCursor={true}
+          modules={[EffectCards]}
+          className="mySwiper"
+        >
+          <SwiperSlide><img src={ethicalHacking} alt="ethicalHacking" /></SwiperSlide>
+          <SwiperSlide><img src={volunteer} alt="volunteer" /></SwiperSlide>
+          <SwiperSlide><img src={nasa} alt="nasa" /></SwiperSlide>
+          
+        </Swiper>
       </div>
-    );
+    </div>
+  );
 }
 
 export default Certifications;
