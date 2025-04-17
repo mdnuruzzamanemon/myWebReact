@@ -8,6 +8,8 @@ import WebProject from "./webProject";
 import AndroidProject from "./androidProjects";
 import Skills from "./skills";
 import Certifications from "./certifications";
+import Timeline from "./timeline";
+
 
 function Index()
 {
@@ -29,6 +31,8 @@ function Index()
                 {activeTab === "android" && <AndroidProject handleTabClick={handleTabClick}/>}
                 <Skills />
                 <Certifications />
+                <Timeline />
+               
             </div>
         </div>
     );
