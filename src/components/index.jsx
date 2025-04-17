@@ -9,6 +9,7 @@ import AndroidProject from "./androidProjects";
 import Skills from "./skills";
 import Certifications from "./certifications";
 import Timeline from "./timeline";
+import ContactForm from "./ContactForm";
 
 
 function Index()
@@ -32,6 +33,7 @@ function Index()
                 <Skills />
                 <Certifications />
                 <Timeline />
+                <ContactForm />
                
             </div>
         </div>
