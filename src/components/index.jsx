@@ -8,7 +8,7 @@ import AndroidApps from "./AndroidApps";
 import Others from "./Others";
 import Skills from "./skills";
 import Certifications from "./certifications";
-import Timeline from "./timeline";
+import TimelineTabs from "./TimelineTabs";
 import ContactForm from "./ContactForm";
 
 
@@ -32,7 +32,7 @@ function Index()
                 {activeTab === "others" && <Others handleTabClick={handleTabClick}/>}
                 <Skills />
                 <Certifications />
-                <Timeline />
+                <TimelineTabs />
                 <ContactForm />
                
             </div>
