@@ -1,0 +1,70 @@
+import React from "react";
+import ProjectsComponent from "./ProjectsComponent";
+import projectImg from "../images/emon.png"; // Fallback image
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+
+function WebApps({ handleTabClick }) {
+    // Create projects array with all web app projects
+    const projects = [
+        {
+            title: "Biddarthi",
+            details: "Online e-learning and course selling platform. Built with Next.js, Express.js, TypeScript, MongoDB, Framer Motion and ShadCN for admin panel. V2 adds user authentication, payment gateway integration, PostgreSQL, Knex.js, and SSL Commerz.",
+            image: projectImg,
+            icon: faGlobe,
+            link: "https://biddarthi.org"
+        },
+        {
+            title: "PirhoTech",
+            details: "Agency web app where all services are shown. Built with Next.js and Three.js.",
+            image: projectImg,
+            icon: faGlobe,
+            link: "https://pirhotech.com"
+        },
+        {
+            title: "Kormi Koi",
+            details: "Worker management app for electricians, plumbers, painters, and other laborers to find jobs. Built with Next.js, Express.js, PostgreSQL, Knex.js, Socket programming, SSL Commerz, with a Flutter mobile app.",
+            image: projectImg,
+            icon: faGlobe,
+            link: "https://kormikoi-landing.vercel.app"
+        },
+        {
+            title: "Turf Booking System",
+            details: "A booking system for sports turfs, product purchases, and tournament listings. Built with Next.js, Supabase, SSL Commerz.",
+            image: projectImg,
+            icon: faGlobe,
+            link: "https://turfslot.com"
+        },
+        {
+            title: "Outcome Based Education Management System",
+            details: "A system that helps institutes deliver outcome-focused education and map course outcomes to program outcomes. Built with Next.js, TypeScript, Express.js, ShadCN, PostgreSQL, and Knex.js.",
+            image: projectImg,
+            icon: faGlobe,
+            link: "#"
+        },
+        {
+            title: "Blog Web for Modern Technologies",
+            details: "A blog web app for modern technologies, featuring tech stack-related blogs with syntax-highlighted code. Built with Next.js.",
+            image: projectImg,
+            icon: faGlobe,
+            link: "https://pirhotech-blog.vercel.app"
+        },
+        {
+            title: "Chat App",
+            details: "A real-time chat application built using socket programming for instant messaging. Developed with Express.js, EJS for templating, and MongoDB for data storage.",
+            image: projectImg,
+            icon: faGlobe,
+            link: "https://chatapp-iota-ebon.vercel.app"
+        }
+    ];
+
+    return (
+        <ProjectsComponent
+            title="Web Apps"
+            projects={projects}
+            activeTab="webapps"
+            handleTabClick={handleTabClick}
+        />
+    );
+}
+
+export default WebApps; 

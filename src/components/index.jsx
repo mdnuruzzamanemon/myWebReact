@@ -3,9 +3,9 @@ import "../css/index.css";
 import Navbar from "./navbar";
 import Header from "./header";
 import About from "./about";
-import ReactProjects from "./reactProjects";
-import WebProject from "./webProject";
-import AndroidProject from "./androidProjects";
+import WebApps from "./WebApps";
+import AndroidApps from "./AndroidApps";
+import Others from "./Others";
 import Skills from "./skills";
 import Certifications from "./certifications";
 import Timeline from "./timeline";
@@ -14,7 +14,7 @@ import ContactForm from "./ContactForm";
 
 function Index()
 {
-    const [activeTab, setActiveTab] = useState("react"); // Default to React Projects tab
+    const [activeTab, setActiveTab] = useState("webapps"); // Default to Web Apps tab
 
     // Function to handle tab clicks
     const handleTabClick = (tab) => {
@@ -27,9 +27,9 @@ function Index()
                 <Navbar />
                 <Header />
                 <About />
-                {activeTab === "react" && <ReactProjects handleTabClick={handleTabClick} />}
-                {activeTab === "web" && <WebProject handleTabClick={handleTabClick}/>}
-                {activeTab === "android" && <AndroidProject handleTabClick={handleTabClick}/>}
+                {activeTab === "webapps" && <WebApps handleTabClick={handleTabClick} />}
+                {activeTab === "android" && <AndroidApps handleTabClick={handleTabClick}/>}
+                {activeTab === "others" && <Others handleTabClick={handleTabClick}/>}
                 <Skills />
                 <Certifications />
                 <Timeline />
