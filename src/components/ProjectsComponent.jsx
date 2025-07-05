@@ -39,19 +39,19 @@ function ProjectsComponent({ title, projects, activeTab, handleTabClick }) {
                 </div>
                 <div className="projectBtns">
                     <button 
-                        style={activeTab === "webapps" ? {backgroundColor: "#4CAF50"} : {}} 
+                        style={activeTab === "webapps" ? {background: "linear-gradient(45deg, #0098a9 0%, #00d4ff 50%, #006d7a 100%)"} : {}} 
                         onClick={() => handleTabClick("webapps")}
                     > 
                         Web Apps 
                     </button>
                     <button 
-                        style={activeTab === "android" ? {backgroundColor: "#4CAF50"} : {}} 
+                        style={activeTab === "android" ? {background: "linear-gradient(45deg, #0098a9 0%, #00d4ff 50%, #006d7a 100%)"} : {}} 
                         onClick={() => handleTabClick("android")}
                     > 
                         Android Apps 
                     </button>
                     <button 
-                        style={activeTab === "others" ? {backgroundColor: "#4CAF50"} : {}} 
+                        style={activeTab === "others" ? {background: "linear-gradient(45deg, #0098a9 0%, #00d4ff 50%, #006d7a 100%)"} : {}} 
                         onClick={() => handleTabClick("others")}
                     > 
                         Others 
@@ -91,7 +91,7 @@ function ProjectsComponent({ title, projects, activeTab, handleTabClick }) {
                             <button 
                                 style={{
                                     padding: '10px 20px',
-                                    backgroundColor: '#4CAF50',
+                                    background: 'linear-gradient(45deg, #0098a9 0%, #00d4ff 50%, #006d7a 100%)',
                                     color: 'white',
                                     border: 'none',
                                     borderRadius: '4px',

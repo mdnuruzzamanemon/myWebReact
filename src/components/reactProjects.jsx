@@ -60,7 +60,7 @@ function ReactProjects({ handleTabClick }) {
                     <ProgressBar progress={progress}/>
                 </div>
                 <div className="projectBtns">
-                    <button style={{backgroundColor: "#4CAF50"}} onClick={() => handleTabClick("react")}> React Projects </button>
+                    <button style={{background: "linear-gradient(45deg, #0098a9 0%, #00d4ff 50%, #006d7a 100%)"}} onClick={() => handleTabClick("react")}> React Projects </button>
                     <button onClick={() => handleTabClick("web")}> Web Projects </button>
                     <button onClick={() => handleTabClick("android")}> Android Projects </button>
                 </div>

@@ -41,7 +41,7 @@ function ProjectsFullPage({ title, projects, category }) {
         <div className="projectsMainBox">
             <div className="container">
                 <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
-                    <Link to="/" style={{ marginRight: '15px', color: '#4CAF50' }}>
+                    <Link to="/" style={{ marginRight: '15px', background: 'linear-gradient(45deg, #0098a9 0%, #00d4ff 50%, #006d7a 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                         <FontAwesomeIcon icon={faArrowLeft} size="lg" />
                     </Link>
                     <h3>{title} - All Projects</h3>
@@ -71,32 +71,24 @@ function ProjectsFullPage({ title, projects, category }) {
                 </div>
                 
                 {/* Pagination */}
-                {totalPages > 1 && (
-                    <div style={{ 
-                        display: 'flex', 
-                        justifyContent: 'center',
-                        marginTop: '30px',
-                        marginBottom: '20px'
-                    }}>
-                        {Array.from({ length: totalPages }, (_, i) => i + 1).map(number => (
-                            <button
-                                key={number}
-                                onClick={() => paginate(number)}
-                                style={{
-                                    margin: '0 5px',
-                                    padding: '8px 12px',
-                                    border: 'none',
-                                    borderRadius: '4px',
-                                    backgroundColor: currentPage === number ? '#4CAF50' : '#f0f0f0',
-                                    color: currentPage === number ? 'white' : 'black',
-                                    cursor: 'pointer'
-                                }}
-                            >
-                                {number}
-                            </button>
-                        ))}
-                    </div>
-                )}
+                <div style={{ display: 'flex', justifyContent: 'center', gap: '10px', marginTop: '30px' }}>
+                    {Array.from({ length: totalPages }, (_, i) => i + 1).map((number) => (
+                        <button
+                            key={number}
+                            onClick={() => paginate(number)}
+                            style={{
+                                padding: '8px 12px',
+                                background: currentPage === number ? 'linear-gradient(45deg, #0098a9 0%, #00d4ff 50%, #006d7a 100%)' : '#f0f0f0',
+                                color: currentPage === number ? 'white' : '#333',
+                                border: 'none',
+                                borderRadius: '4px',
+                                cursor: 'pointer'
+                            }}
+                        >
+                            {number}
+                        </button>
+                    ))}
+                </div>
             </div>
         </div>
         </>

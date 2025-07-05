@@ -23,13 +23,13 @@ const TimelineTabs = () => {
         </div>
         <div className="projectBtns">
           <button
-            style={activeTab === 'experience' ? { backgroundColor: '#4CAF50', color: '#fff' } : {}}
+            style={activeTab === 'experience' ? { background: 'linear-gradient(45deg, #0098a9 0%, #00d4ff 50%, #006d7a 100%)', color: '#fff' } : {}}
             onClick={() => setActiveTab('experience')}
           >
             Experience
           </button>
           <button
-            style={activeTab === 'educations' ? { backgroundColor: '#4CAF50', color: '#fff' } : {}}
+            style={activeTab === 'educations' ? { background: 'linear-gradient(45deg, #0098a9 0%, #00d4ff 50%, #006d7a 100%)', color: '#fff' } : {}}
             onClick={() => setActiveTab('educations')}
           >
             Educations

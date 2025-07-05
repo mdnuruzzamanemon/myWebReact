@@ -1,5 +1,3 @@
-
-
 .timelineContainer {
   position: relative;
   max-width: 1200px;
@@ -84,7 +82,10 @@
   font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 10px;
-  color: #0098a9;
+  background: linear-gradient(45deg, #0098a9 0%, #00d4ff 50%, #006d7a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .info p {

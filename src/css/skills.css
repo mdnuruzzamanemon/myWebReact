@@ -82,7 +82,7 @@
 }
 .languagesBtnBox button
 {
-  background-color: #4CAF50;
+  background: linear-gradient(45deg, #0098a9 0%, #00d4ff 50%, #006d7a 100%);
   color: #ffffff;
   padding: 10px 30px;
   border-radius: 7px;
@@ -99,7 +99,10 @@
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   font-size: 30px;
-  color: #4CAF50;
+  background: linear-gradient(45deg, #0098a9 0%, #00d4ff 50%, #006d7a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .skills-nav-buttons
 {

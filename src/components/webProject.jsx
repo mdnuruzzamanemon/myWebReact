@@ -62,7 +62,7 @@ function WebProject({ handleTabClick }) {
                 </div>
                 <div className="projectBtns">
                     <button onClick={() => handleTabClick("react")}> React Projects </button>
-                    <button style={{backgroundColor: "#4CAF50"}} onClick={() => handleTabClick("web")}> Web Projects </button>
+                    <button style={{background: "linear-gradient(45deg, #0098a9 0%, #00b4c7 50%, #007a8a 100%)"}} onClick={() => handleTabClick("web")}> Web Projects </button>
                     <button onClick={() => handleTabClick("android")}> Android Projects </button>
                 </div>
                 <div className="projectBox">
