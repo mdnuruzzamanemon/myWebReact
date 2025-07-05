@@ -56,8 +56,17 @@ function ProjectsFullPage({ title, projects, category }) {
                         <div className="viewProjectsBox" key={index}>
                             <Link to={project.link}>
                                 <div className="viewProject">
-                                    <div className="imageBox">
-                                        <img src={project.image} alt={project.title} />
+                                    <div className="imageBox project-logo-bg"
+                                        style={{
+                                            backgroundImage: `url(${project.image || project.logo})`,
+                                            backgroundSize: 'cover',
+                                            backgroundRepeat: 'no-repeat',
+                                            backgroundPosition: 'top center',
+                                            transition: 'background-position 3s ease',
+                                            height: '200px',
+                                        }}
+                                    >
+                                        {/* <img src={project.image} alt={project.title} /> */}
                                     </div>
                                     <div className="contentBox">
                                         <h3>{project.title}</h3>

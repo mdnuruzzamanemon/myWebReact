@@ -65,15 +65,25 @@ function ProjectsComponent({ title, projects, activeTab, handleTabClick }) {
                                 className={`project project${index + 1}`} 
                                 onClick={() => handleProjectClick(project)}
                             >
-                                <img src={project.image} alt={project.title} />
+                                <img src={project.logo} alt={project.title} />
                             </div>
                         ))}
                     </div>
                     <div className="viewProjectsBox">
                         <Link to={selectedProject.link}>
                             <div className="viewProject">
-                                <div className="imageBox">
-                                    <img src={selectedProject.image} alt={selectedProject.title} />
+                                <div className="imageBox project-logo-bg"
+                                    style={{
+                                        backgroundImage: `url(${selectedProject.image || selectedProject.image})`,
+                                        backgroundSize: 'cover',
+                                        backgroundRepeat: 'no-repeat',
+                                        backgroundPosition: 'top center',
+                                        transition: 'background-position 3s ease',
+                                        height: '200px',
+                                        
+                                    }}
+                                >
+                                    {/* <img src={selectedProject.image} alt={selectedProject.title} /> */}
                                 </div>
                                 <div className="contentBox">
                                     <h3>{selectedProject.title}</h3>
