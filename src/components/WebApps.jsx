@@ -7,6 +7,8 @@ import pirhoTechLogo from "../images/webProjects/pirhoTechLogo.svg";
 import pirhoTech from "../images/webProjects/pirhotech.png";
 import kormiKoi from "../images/webProjects/kormikoi.png";  
 import kormiKoiLogo from "../images/webProjects/kormikoiLogo.png";
+import turfSlot from "../images/webProjects/turfslot.png";
+import turfSlotLogo from "../images/webProjects/turfslotLogo.png";
 
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
@@ -30,20 +32,20 @@ function WebApps({ handleTabClick }) {
             link: "https://pirhotech.com"
         },
         {
+            title: "Turf Booking System",
+            details: "A booking system for sports turfs, product purchases, and tournament listings. Built with Next.js, Supabase, SSL Commerz.",
+            image: turfSlot,
+            logo: turfSlotLogo,
+            icon: faGlobe,
+            link: "https://turfslot.com"
+        },
+        {
             title: "Kormi Koi",
             details: "Worker management app for electricians, plumbers, painters, and other laborers to find jobs. Built with Next.js, Express.js, PostgreSQL, Knex.js, Socket programming, SSL Commerz, with a Flutter mobile app.",
             image: kormiKoi,
             logo: kormiKoiLogo,
             icon: faGlobe,
             link: "https://kormikoi-landing.vercel.app"
-        },
-        {
-            title: "Turf Booking System",
-            details: "A booking system for sports turfs, product purchases, and tournament listings. Built with Next.js, Supabase, SSL Commerz.",
-            image: projectImg,
-            logo: projectImg,
-            icon: faGlobe,
-            link: "https://turfslot.com"
         },
         {
             title: "Outcome Based Education Management System",

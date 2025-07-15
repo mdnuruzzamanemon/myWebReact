@@ -10,6 +10,7 @@ import Skills from "./skills";
 import Certifications from "./certifications";
 import TimelineTabs from "./TimelineTabs";
 import ContactForm from "./ContactForm";
+import SolarSystemBG from "./3js/animation"
 
 
 function Index()
@@ -24,6 +25,7 @@ function Index()
     return(
         <div className="outerBox">
             <div className="innerBox">
+                {/* <SolarSystemBG /> */}
                 <Navbar />
                 <Header />
                 <About />
