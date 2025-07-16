@@ -128,3 +128,92 @@
 .project-logo-bg:hover {
   background-position: bottom center !important;
 }
+
+@media screen and (max-width: 770px)
+{
+  .projectBox
+  {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .viewProjects
+  {
+    width: 100%;
+  }
+  .projectBtns button
+  {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .projectBtns button:nth-child(2)
+  {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .allProjects
+  {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .allProjects .project
+  {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 600px)
+{
+  .allProjects
+  {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 550px)
+{
+  .viewProject
+  {
+    width: 90%;
+    margin: auto;
+  }
+  .viewProject p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+  .allProjects
+  {
+    gap: 15px;
+  }
+  .allProjects .project
+  {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 500px)
+{
+  .projectBtns button
+  {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+@media screen and (max-width: 500px)
+{
+  .allProjects
+  {
+    gap: 10px;
+  }
+  .allProjects .project
+  {
+    width: 70px;
+    height: 70px;
+  }
+}

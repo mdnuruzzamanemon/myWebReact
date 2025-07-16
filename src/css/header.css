@@ -41,3 +41,17 @@
       -5px -5px 10px rgba(255, 255, 255, 0.1);
       margin: 0 30px;
 }
+@media screen and (max-width: 930px)
+{
+    .headerBtns button
+    {
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 930px)
+{
+    .header .headerMid
+    {
+        width: 80%;
+    }
+}

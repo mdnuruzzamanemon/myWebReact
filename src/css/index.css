@@ -13,3 +13,10 @@
       padding-bottom:50px ;
       font-family: cursive;
 }
+@media screen and (max-width: 550px)
+{
+    .outerBox
+    {
+        border: solid 35px #24272C;
+    }
+}

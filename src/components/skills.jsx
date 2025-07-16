@@ -16,7 +16,6 @@ import reactNative from "../images/skillsLogo/react-native.png";
 import nodejs from "../images/skillsLogo/nodejs.png";
 import mysql from "../images/skillsLogo/mysql.png";
 
-
 function ProgressBar({ progress }) {
   return (
     <div className="progress-bar">
@@ -26,30 +25,17 @@ function ProgressBar({ progress }) {
 }
 
 function Skills() {
-
-  // for progressbar
   const [progress, setProgress] = useState(0);
-
-  // for nav buttons
-  const [shadowLeft, setShadowLeft]= useState(
-    { 
-      boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.1)",
-    }
-  );
-  const [shadowRight, setShadowRight]= useState(
-    { 
-      boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.1)",
-    }
-  );
-
-  useEffect(() => {
-    setTimeout(() => {
-      setProgress(70);
-    }, 100);
-  }, []);
-  // end
-
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [radius, setRadius] = useState(220);
+
+  const [shadowLeft, setShadowLeft] = useState({
+    boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.1)",
+  });
+  const [shadowRight, setShadowRight] = useState({
+    boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.1)",
+  });
+
   const items = [
     { id: 1, image: cpp, progress: 70 },
     { id: 2, image: gitLogo, progress: 20 },
@@ -63,8 +49,27 @@ function Skills() {
     { id: 10, image: reactNative, progress: 50 },
     { id: 11, image: nodejs, progress: 20 },
     { id: 12, image: mysql, progress: 65 },
-    // Add more items as needed
   ];
+
+  useEffect(() => {
+    const updateRadius = () => {
+      const width = window.innerWidth;
+      if (width < 500) setRadius(90);
+      else if (width < 768) setRadius(120);
+      else if (width < 900) setRadius(150);
+      else setRadius(220);
+    };
+
+    updateRadius(); // Initial
+    window.addEventListener("resize", updateRadius);
+    return () => window.removeEventListener("resize", updateRadius);
+  }, []);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setProgress(70);
+    }, 100);
+  }, []);
 
   const transitions = useTransition(selectedIndex, {
     from: { opacity: 0, transform: 'scale(0)' },
@@ -74,64 +79,40 @@ function Skills() {
 
   const handleItemClick = (index) => {
     setSelectedIndex(index);
-    if (items[index].progress) {
-      setProgress(items[index].progress);
-    }
+    if (items[index].progress) setProgress(items[index].progress);
   };
-
-  // const handlePrev = () => {
-  //   setSelectedIndex((prevIndex) => (prevIndex === 0 ? items.length - 1 : prevIndex - 1));
-  // };
-
-  // const handleNext = () => {
-  //   setSelectedIndex((prevIndex) => (prevIndex === items.length - 1 ? 0 : prevIndex + 1));
-  // };
 
   const handlePrev = () => {
     setSelectedIndex((prevIndex) => {
       const newIndex = prevIndex === 0 ? items.length - 1 : prevIndex - 1;
-      if (items[newIndex].progress) {
-        setProgress(items[newIndex].progress);
-      }
+      setProgress(items[newIndex].progress);
       return newIndex;
     });
-
-    // for click animation
     setShadowLeft({
       boxShadow: "inset 3px 4px 3px rgba(0, 0, 0, 0.3), inset -4px -3px 5px rgba(255, 255, 255, 0.1)",
     });
-  
-    // Revert the style after 200ms
     setTimeout(() => {
       setShadowLeft({
         boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.1)",
       });
     }, 200);
   };
-  
+
   const handleNext = () => {
     setSelectedIndex((prevIndex) => {
       const newIndex = prevIndex === items.length - 1 ? 0 : prevIndex + 1;
-      if (items[newIndex].progress) {
-        setProgress(items[newIndex].progress);
-      }
+      setProgress(items[newIndex].progress);
       return newIndex;
     });
-
-    // for click animation
     setShadowRight({
       boxShadow: "inset 3px 4px 3px rgba(0, 0, 0, 0.3), inset -4px -3px 5px rgba(255, 255, 255, 0.1)",
     });
-  
-    // Revert the style after 200ms
     setTimeout(() => {
       setShadowRight({
         boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.1)",
       });
     }, 200);
-
   };
-  
 
   return (
     <div className="container">
@@ -166,7 +147,7 @@ function Skills() {
                 key={item.id}
                 className={`small-item ${index === selectedIndex ? 'active' : ''}`}
                 style={{
-                  transform: `rotate(${(index * 360) / items.length}deg) translateX(220px) rotate(${-(index * 360) / items.length}deg)`,
+                  transform: `rotate(${(index * 360) / items.length}deg) translateX(${radius}px) rotate(${-(index * 360) / items.length}deg)`,
                 }}
                 onClick={() => handleItemClick(index)}
               >
@@ -179,6 +160,5 @@ function Skills() {
     </div>
   );
 }
-
 
 export default Skills;

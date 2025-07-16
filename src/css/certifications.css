@@ -37,3 +37,10 @@
   background-color: rgb(10, 184, 111);
 }
 
+@media screen and (max-width: 900px)
+{
+  .swiper
+  {
+    width: 80%;
+  }
+}

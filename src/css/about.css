@@ -21,3 +21,22 @@
     margin-left: 50px;
     color: #ffffff;
 }
+@media screen and (max-width: 850px)
+{
+    .aboutBox
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .aboutImg
+    {
+        width: 200px;
+        height: 200px;
+    }
+    .aboutDetails
+    {
+        margin-top: 20px;
+        margin-left: 0;
+        text-align: center;
+    }
+}
