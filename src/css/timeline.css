@@ -12,7 +12,10 @@
   opacity: 0;
   animation: animateBox 0.3s linear forwards;
 }
-
+.timelineHeading h3
+{
+  text-align: end;
+}
 @keyframes animateBox {
   0% {
     opacity: 0.8;

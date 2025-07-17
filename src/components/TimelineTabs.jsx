@@ -17,7 +17,10 @@ const TimelineTabs = () => {
   return (
     <div className="projectsMainBox">
       <div className="container">
-        <h3>Timeline</h3>
+        <div className="timelineHeading">
+          <h3>{activeTab==='experience'? "Experience": "Education"}</h3>
+        </div>
+        
         <div className="progressBox">
           <ProgressBar progress={70} />
         </div>
