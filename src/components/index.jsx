@@ -11,6 +11,7 @@ import Certifications from "./certifications";
 import TimelineTabs from "./TimelineTabs";
 import ContactForm from "./ContactForm";
 import SolarSystemBG from "./3js/animation"
+import SocialNav from "./SocialNav";
 
 
 function Index()
@@ -36,7 +37,7 @@ function Index()
                 <Certifications />
                 <TimelineTabs />
                 <ContactForm />
-               
+               <SocialNav />
             </div>
         </div>
     );
