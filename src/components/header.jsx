@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/header.css";
-import headerEmonImg from "../images/emon.png";
+import headerEmonImg from "../images/emon2.png";
 
 function Header() {
     return (

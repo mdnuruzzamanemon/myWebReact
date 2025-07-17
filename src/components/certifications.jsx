@@ -7,6 +7,7 @@ import "../css/certifications.css"
 import ethicalHacking from "../images/certificates/ethicalHacking.png";
 import nasa from "../images/certificates/nasa.jpg";
 import volunteer from "../images/certificates/Volunteer-221002143-1.png";
+import udemy from "../images/certificates/udemy.jpg";
 
 
 // Import Swiper React components
@@ -51,6 +52,7 @@ function Certifications() {
           modules={[EffectCards]}
           className="mySwiper"
         >
+          <SwiperSlide><img src={udemy} alt="udemy" /></SwiperSlide>
           <SwiperSlide><img src={ethicalHacking} alt="ethicalHacking" /></SwiperSlide>
           <SwiperSlide><img src={volunteer} alt="volunteer" /></SwiperSlide>
           <SwiperSlide><img src={nasa} alt="nasa" /></SwiperSlide>
