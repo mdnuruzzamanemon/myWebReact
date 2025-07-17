@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import '../css/ContactForm.css';
 import profileImage from '../images/emon.png'; // Replace with your local image or URL
+import ContactAnimaiton from "./animations/ContactAnimation";
 
 function ProgressBar({ progress }) {
   return (
@@ -32,7 +33,8 @@ const ContactForm = () => {
       
 
       <div className="contact-image">
-        <img src={profileImage} alt="contact profile" />
+        {/* <img src={profileImage} alt="contact profile" /> */}
+        <ContactAnimaiton />
       </div>
 
       <form className="contact-form">

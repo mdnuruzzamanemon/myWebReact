@@ -5,8 +5,8 @@
 }
 .aboutImg
 {
-    height: 250px;
-    width: 250px;
+    height: fit-content;
+    /* width: 250px; */
     background-color: #24272C;
     box-shadow: 
       5px 5px 10px rgba(0, 0, 0, 0.3), 

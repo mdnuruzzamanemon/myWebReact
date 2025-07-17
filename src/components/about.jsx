@@ -1,6 +1,7 @@
 import React from "react";
 import aboutEmonImg from "../images/emon.png";
 import "../css/about.css";
+import AboutAnimaiton from "./animations/AboutAnimation";
 
 function About()
 {
@@ -8,7 +9,8 @@ function About()
         <div className="container">
             <div className="aboutBox">
                 <div className="aboutImg">
-                    <img src={aboutEmonImg} alt="about" />
+                    {/* <img src={aboutEmonImg} alt="about" /> */}
+                    <AboutAnimaiton />
                 </div>
                 <div className="aboutDetails">
                     <h3>About Me</h3>
