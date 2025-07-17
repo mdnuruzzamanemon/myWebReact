@@ -90,4 +90,24 @@
       max-width: 320px;
     }
   }
+    @media (max-width: 500px)
+    {
+      .contact-container {
+        padding: 1.5rem;
+      }
   
+      .contact-image {
+        width: 100%;
+        height: auto;
+      }
+  
+      .contact-form input,
+      .contact-form textarea {
+        font-size: 0.9rem;
+      }
+  
+      .contact-form button {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.5rem;
+      }
+    }

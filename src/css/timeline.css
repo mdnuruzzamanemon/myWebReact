@@ -115,7 +115,7 @@
   }
 
   .vertical-line {
-    left: 60px;
+    left: 40px;
   }
 
   .box {
@@ -130,7 +130,7 @@
 
   .icon-wrapper.left,
   .icon-wrapper.right {
-    left: 35px !important;
+    left: 8px !important;
     right: auto !important;
   }
 
@@ -143,19 +143,29 @@
     border-right: 14px solid #002124;
     left: -14px;
   }
+  .timelineContainer .box
+  {
+    padding-left: 90px;
+    padding-right: 15px;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .vertical-line {
-    left: 40px;
+    left: 30px;
   }
 
   .box {
     padding-left: 85px;
   }
+  .icon-wrapper.left , .icon-wrapper.right
+  {
+    left: 0px !important;
+  }
+  
 
-  .icon-wrapper.left,
-  .icon-wrapper.right {
-    left: 15px !important;
+  .timelineContainer .box
+  {
+    padding-left: 75px;
   }
 }

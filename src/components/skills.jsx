@@ -54,7 +54,8 @@ function Skills() {
   useEffect(() => {
     const updateRadius = () => {
       const width = window.innerWidth;
-      if (width < 500) setRadius(90);
+      if (width < 392) setRadius(80);
+      else if (width < 500) setRadius(90);
       else if (width < 768) setRadius(120);
       else if (width < 900) setRadius(150);
       else setRadius(220);
