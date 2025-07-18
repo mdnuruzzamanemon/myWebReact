@@ -25,6 +25,13 @@
 {
     color: #ffffff;
 }
+.headerContent h1 span
+{
+    background: linear-gradient(45deg, #0098a9 0%, #00d4ff 50%, #006d7a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
 .headerContent p
 {
     margin: 20px 0;
@@ -54,4 +61,35 @@
     {
         width: 80%;
     }
+}
+
+/* Add these styles to your existing header.css */
+
+.typewriter-container {
+    display: inline-block;
+    min-height: 1em;
+    position: relative;
+}
+
+.typewriter {
+    background: linear-gradient(45deg, #0098a9 0%, #00d4ff 50%, #006d7a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline;
+}
+
+.cursor {
+    background: linear-gradient(45deg, #0098a9 0%, #00d4ff 50%, #006d7a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: blink 1s infinite;
+    font-weight: normal;
+    display: inline;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
 }
