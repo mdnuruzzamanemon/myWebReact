@@ -15,6 +15,12 @@ import cProgramming from "../images/skillsLogo/c-programming.png";
 import reactNative from "../images/skillsLogo/react-native.png";
 import nodejs from "../images/skillsLogo/nodejs.png";
 import mysql from "../images/skillsLogo/mysql.png";
+import nextjs from "../images/skillsLogo/nextjs.png";
+import postgresql from "../images/skillsLogo/postgresql.png";
+import expressjs from "../images/skillsLogo/express-js.png";
+import mongodb from "../images/skillsLogo/mongodb.png";
+import typescript from "../images/skillsLogo/typescript.png";
+import tailwindcss from "../images/skillsLogo/tailwindcss.png";
 
 function ProgressBar({ progress }) {
   return (
@@ -37,18 +43,18 @@ function Skills() {
   });
 
   const items = [
-    { id: 1, image: cpp, progress: 70 },
-    { id: 2, image: gitLogo, progress: 20 },
-    { id: 3, image: css, progress: 50 },
-    { id: 4, image: java, progress: 90 },
-    { id: 5, image: javascript, progress: 40 },
-    { id: 6, image: html, progress: 60 },
-    { id: 7, image: assembly, progress: 20 },
-    { id: 8, image: bootstrap, progress: 90 },
+    { id: 1, image: cpp, progress: 40 },
+    { id: 2, image: gitLogo, progress: 90 },
+    { id: 3, image: nextjs, progress: 70 },
+    { id: 4, image: java, progress: 80 },
+    { id: 5, image: javascript, progress: 70 },
+    { id: 6, image: typescript, progress: 80 },
+    { id: 7, image: expressjs, progress: 80 },
+    { id: 8, image: tailwindcss, progress: 90 },
     { id: 9, image: cProgramming, progress: 60 },
-    { id: 10, image: reactNative, progress: 50 },
-    { id: 11, image: nodejs, progress: 20 },
-    { id: 12, image: mysql, progress: 65 },
+    { id: 10, image: reactNative, progress: 70 },
+    { id: 11, image: nodejs, progress: 50 },
+    { id: 12, image: postgresql, progress: 85 },
   ];
 
   useEffect(() => {
