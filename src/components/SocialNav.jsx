@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faEnvelope,
@@ -19,34 +18,34 @@ function SocialNav() {
         <div className="mainMenu">
           <ul>
             <li>
-              <Link to="/facebook">
+              <a href="https://www.facebook.com/mdnuruzzamanemon" target="_blank" rel="noopener noreferrer">
                 <span><FontAwesomeIcon icon={faFacebook} /></span>
                 Facebook
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/email">
+              <a href="mailto:nuruzzaman@gmail.com">
                 <span><FontAwesomeIcon icon={faEnvelope} /></span>
                 Email
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/linkedin">
+              <a href="https://www.linkedin.com/in/mdnuruzzamanemon" target="_blank" rel="noopener noreferrer">
                 <span><FontAwesomeIcon icon={faLinkedin} /></span>
                 LinkedIn
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/github">
+              <a href="https://github.com/mdnuruzzamanemon" target="_blank" rel="noopener noreferrer">
                 <span><FontAwesomeIcon icon={faGithub} /></span>
                 GitHub
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/phone">
+              <a href="tel:+8801703612881">
                 <span><FontAwesomeIcon icon={faPhone} /></span>
                 Phone
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
