@@ -16,7 +16,7 @@ const ContactForm = () => {
   const [progress, setProgress] = useState(0);
     useEffect(() => {
       setTimeout(() => {
-        setProgress(50);
+        setProgress(98);
       }, 100);
     }, []);
 
