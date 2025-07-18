@@ -21,6 +21,10 @@
     margin-left: 50px;
     color: #ffffff;
 }
+.aboutDetails p
+{
+    text-align: justify;
+}
 @media screen and (max-width: 850px)
 {
     .aboutBox

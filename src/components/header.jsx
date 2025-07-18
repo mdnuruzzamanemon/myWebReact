@@ -13,7 +13,7 @@ function Header() {
                     <h4>Hey</h4>
                     <h1>This is Md Nuruzzaman Emon</h1>
                     <h4>I am a Programmer</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, illo illum dolorem nostrum, repellendus distinctio eligendi magnam vel quisquam sit, maiores itaque. Adipisci corporis alias delectus dolor perspiciatis optio illo.</p>
+                    <p>A passionate and dynamic full-stack developer crafting real-world, impact-driven solutions across e-commerce, edtech, and real-time platforms. Explore a showcase of intuitive, scalable applications—built with modern technologies like React, Next.js, Node.js, and PostgreSQL.</p>
                 </div>
                 <div className="headerBtns">
                     <button>Learn More</button>
