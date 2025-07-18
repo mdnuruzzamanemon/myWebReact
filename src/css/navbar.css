@@ -36,6 +36,7 @@
       5px 5px 10px rgba(0, 0, 0, 0.3), 
       -5px -5px 10px rgba(255, 255, 255, 0.1);
 }
+
 .mainMenu ul li a span, .socialNavMenu ul li a span
 {
     font-size: 20px;
@@ -72,6 +73,10 @@ nav
 {
     height: 50px;
     width: 50px;
+}
+.logo a:hover
+{
+    color: #f0eded;
 }
 @media screen and (max-width: 850px)
 {

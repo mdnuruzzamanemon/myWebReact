@@ -4,7 +4,10 @@
   height: fit-content;
   margin: 80px auto;
 }
-
+.timelineContainer .info p
+{
+  text-align: justify;
+}
 .box {
   position: relative;
   width: 50%;
