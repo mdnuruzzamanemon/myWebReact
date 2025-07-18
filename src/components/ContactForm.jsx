@@ -86,7 +86,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <div className="container">
+      <div className="container" id="contact">
         <h3 className='contactHeading'>Contact Me</h3>
         <div className="progressBox mb-5">
           <ProgressBar progress={progress} />

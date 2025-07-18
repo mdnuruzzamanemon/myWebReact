@@ -4,7 +4,7 @@ import AboutAnimaiton from "./animations/AboutAnimation";
 
 function About() {
     return (
-        <div className="container">
+        <div className="container" id="about">
             <div className="aboutBox">
                 <div className="aboutImg">
                     {/* <img src={aboutEmonImg} alt="about" /> */}

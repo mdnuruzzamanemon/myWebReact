@@ -54,7 +54,7 @@ function WebProject({ handleTabClick }) {
 
 
     return (
-        <div className="projectsMainBox">
+        <div className="projectsMainBox" >
             <div className="container">
                 <h3>Projects</h3>
                 <div className="progressBox">

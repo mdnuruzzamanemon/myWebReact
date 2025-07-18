@@ -41,7 +41,7 @@ function ProjectsFullPage({ title, projects, category }) {
         <div className="projectsMainBox">
             <div className="container">
                 <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
-                    <Link to="/" style={{ marginRight: '15px', background: 'linear-gradient(45deg, #0098a9 0%, #00d4ff 50%, #006d7a 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+                    <Link to="/" style={{ marginRight: '15px', color: '#00d4ff'  }}>
                         <FontAwesomeIcon icon={faArrowLeft} size="lg" />
                     </Link>
                     <h3>{title} - All Projects</h3>
@@ -51,7 +51,7 @@ function ProjectsFullPage({ title, projects, category }) {
                     <ProgressBar progress={progress} />
                 </div>
                 
-                <div style={{ display: 'flex', flexDirection: 'row', gap: '30px', margin: '30px 0',flexWrap: 'wrap' }}>
+                <div style={{ display: 'flex', flexDirection: 'row', gap: '30px', margin: '30px 0',flexWrap: 'wrap', justifyContent: 'space-around' }}>
                     {currentProjects.map((project, index) => (
                         <div className="viewProjectsBox" key={index}>
                             <Link to={project.link}>

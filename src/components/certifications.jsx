@@ -40,7 +40,7 @@ function Certifications() {
   }, []);
 
   return (
-    <div className="certification-carousel">
+    <div className="certification-carousel" id="certifications">
       <div className="container">
         <h3>Certifications</h3>
         <div className="progressBox mb-5">

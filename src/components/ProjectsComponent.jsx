@@ -31,7 +31,7 @@ function ProjectsComponent({ title, projects, activeTab, handleTabClick }) {
     const displayedProjects = projects.slice(0, 3);
 
     return (
-        <div className="projectsMainBox">
+        <div className="projectsMainBox" id="projects">
             <div className="container">
                 <h3>Projects</h3>
                 <div className="progressBox">

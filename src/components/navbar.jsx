@@ -40,34 +40,34 @@ function Navbar() {
 
                     <ul>
                         <li>
-                            <NavLink to="/about">
+                            <a href="#about">
                                 <span><FontAwesomeIcon icon={faUser} /></span>
                                 About
-                            </NavLink>
+                            </a>
                         </li>
                         <li>
-                            <NavLink>
+                            <a href="/resume/Md_Nuruzzaman_Emon_Resume (Full-Stack).pdf" target="_blank" rel="noopener noreferrer">
                                 <span><FontAwesomeIcon icon={faFileLines} /></span>
                                 Resume
-                            </NavLink>
+                            </a>
                         </li>
                         <li>
-                            <NavLink>
+                            <a href="#projects">
                                 <span><FontAwesomeIcon icon={faDiagramProject} /></span>
                                 Projects
-                            </NavLink>
+                            </a>
                         </li>
                         <li>
-                            <NavLink>
+                            <a href="#certifications">
                                 <span><FontAwesomeIcon icon={faCertificate} /></span>
                                 Certificate
-                            </NavLink>
+                            </a>
                         </li>
                         <li>
-                            <NavLink>
+                            <a href="#contact">
                                 <span><FontAwesomeIcon icon={faAddressBook} /></span>
                                 Contact
-                            </NavLink>
+                            </a>
                         </li>
                     </ul>
                 </div>
