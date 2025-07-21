@@ -46,6 +46,7 @@ function Navbar() {
                             </a>
                         </li>
                         <li>
+                            {/* this file should be updated */}
                             <a href="/resume/Md_Nuruzzaman_Emon_Resume (Full-Stack).pdf" target="_blank" rel="noopener noreferrer">
                                 <span><FontAwesomeIcon icon={faFileLines} /></span>
                                 Resume
